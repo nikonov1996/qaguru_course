@@ -20,6 +20,6 @@ public class RegisterUserGenerator {
                 .withYear(getRandomYear(2023,1996))
                 .withHobbie(getRandomHobbie())
                 .withSubject(getRandomSubject())
-                .withPicture("file.jpg");
+                .withPicture("files/file.jpg");
     }
 }
