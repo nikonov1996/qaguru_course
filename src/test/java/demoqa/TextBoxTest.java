@@ -1,0 +1,39 @@
+package demoqa;
+
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.SelenideElement;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import static com.codeborne.selenide.Selenide.*;
+
+public class TextBoxTest {
+
+    @BeforeAll
+    static void before(){
+        WebDriverManager.chromedriver().setup();
+        Configuration.browser = "chrome";
+        Configuration.driverManagerEnabled = true;
+        Configuration.browserSize = "1920x1080";
+        Configuration.headless = false;
+        Configuration.pageLoadStrategy = "eager";
+        Configuration.baseUrl ="https://demoqa.com";
+    }
+
+    @Test
+    void testThatTextBoxSubmitSuccess(){
+        open("/text-box");
+       // $("#app div.main-header").shouldBe(Condition.text("Text Box"));
+        $(By.id("userName")).setValue("Vladislav");
+        $("#app #userEmail").setValue("Vladislav@mail.ru");
+        $("#app #currentAddress").setValue("Big Podgornaya 42, flat 44");
+        $("#app #permanentAddress").setValue("Big Podgornaya 42, flat 44");
+        $("#app #submit").click();
+
+        $("#output").shouldBe(Condition.visible);
+    }
+}
