@@ -4,6 +4,7 @@ import com.codeborne.pdftest.PDF;
 import com.codeborne.xlstest.XLS;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
+import com.opencsv.CSVParser;
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
 import org.junit.jupiter.api.Test;
@@ -63,8 +64,10 @@ public class FileParsingTest {
     @Test
     void csvFileTest() throws IOException, CsvException {
         try (
+
                 InputStream resourceStream = classLoader.getResourceAsStream("files/test.csv");
                 CSVReader reader = new CSVReader(new InputStreamReader(resourceStream));
+
             ){
             List<String[]> content = reader.readAll();
             System.out.println(Arrays.toString(content.get(0)));
@@ -117,3 +120,7 @@ public class FileParsingTest {
 
     }
 }
+
+
+
+
