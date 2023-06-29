@@ -112,10 +112,10 @@ public class FileParsingTest {
             System.out.println(widgetPojo.widget.window.name);
             System.out.println(widgetPojo.widget.window.title);
             System.out.println(widgetPojo.widget.window.height);
-            System.out.println(widgetPojo.widget.image.alignment);
-            System.out.println(widgetPojo.widget.image.name);
-            System.out.println(widgetPojo.widget.image.src);
-            System.out.println(widgetPojo.widget.image.vOffset);
+            System.out.println(widgetPojo.widget.images[0].alignment);
+            System.out.println(widgetPojo.widget.images[0].name);
+            System.out.println(widgetPojo.widget.images[0].src);
+            System.out.println(widgetPojo.widget.images[0].vOffset);
         }
 
     }

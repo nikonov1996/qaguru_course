@@ -1,5 +1,6 @@
 package practiceWithFiles.pojo;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.SerializedName;
 
 public class WidgetPojo {
@@ -8,7 +9,9 @@ public class WidgetPojo {
     public static class Widget{
         public String debug;
         public Window window;
-        public Image image;
+        public Image[] images;
+
+        public String[] pictures;
 
 
         public static class Window{
@@ -23,8 +26,21 @@ public class WidgetPojo {
             public String name;
             public Integer hOffset;
             public Integer vOffset;
+
+            @JsonProperty("Alignment")
             @SerializedName("Alignment")
             public String alignment;
+
+            @Override
+            public String toString() {
+                return "Image{" +
+                        "src='" + src + '\'' +
+                        ", name='" + name + '\'' +
+                        ", hOffset=" + hOffset +
+                        ", vOffset=" + vOffset +
+                        ", alignment='" + alignment + '\'' +
+                        '}';
+            }
         }
     }
 }

@@ -12,10 +12,6 @@ import java.util.List;
 
 public class CsvFile {
 
-    public static XLS getXlsFileContent(File filename){
-        return new XLS(filename);
-    }
-
     public static List<String[]> getCsvFileContent(ClassLoader classLoader, String filename) throws IOException, CsvException {
         try (
                 InputStreamReader inputStreamReader = new InputStreamReader(classLoader.getResourceAsStream(filename))
