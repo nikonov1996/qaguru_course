@@ -15,7 +15,6 @@ public class XlsFile {
     public static XLS getXlsFileContent(ClassLoader classLoader, String filename) throws IOException {
         try (InputStream resourceStream = classLoader.getResourceAsStream(filename)) {
             return new XLS(resourceStream);
-            //     System.out.println(content.excel.getSheetAt(0).getRow(1).getCell(0).getStringCellValue());
         }
     }
 }
