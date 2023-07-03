@@ -45,8 +45,15 @@ public class CheckBoxPage{
         return this;
     }
 
-    public CheckBoxPage checkByTitle(String folderTitle){
-        $(format("#tree-node-%s",folderTitle).toLowerCase()).parent().hover().click();
+    public CheckBoxPage checkByTitle(String title){
+        $(format("#tree-node-%s",title).toLowerCase()).parent().hover().click();
+        return this;
+    }
+
+    public CheckBoxPage checkByTitlesInList(List<String> titles){
+        titles.stream().forEach(title ->{
+            $(format("#tree-node-%s",title).toLowerCase()).parent().hover().click();
+        });
         return this;
     }
 
@@ -70,6 +77,14 @@ public class CheckBoxPage{
         Assertions.assertTrue(
         getResultSelectedValues().containsAll(expectedValues),
                 "Список заголовков в результате: " + getResultSelectedValues() + "\n не содержит ожидаемые заголовки: " + expectedValues);
+        return this;
+    }
+
+    public CheckBoxPage verifyThatValueInResultSelected(String checkedValue){
+
+        Assertions.assertTrue(
+                getResultSelectedValues().stream().anyMatch(value -> value.equals(checkedValue.toLowerCase())),
+                "Список заголовков в результате: " + getResultSelectedValues() + "\n не содержит ожидаемый заголовок: " + checkedValue);
         return this;
     }
 

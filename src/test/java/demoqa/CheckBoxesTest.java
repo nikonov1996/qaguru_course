@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import java.util.HashMap;
 import java.util.List;
@@ -13,19 +14,20 @@ import java.util.stream.Stream;
 
 public class CheckBoxesTest extends TestBase {
 
-    /*
-    Кейсы:
-    1. проверить, что если выделить все файлы в папке то в списке выбранных появляется название папки
-    2. проверить, что если выбрать папку, то выбираются все папки и файлы внутри
-     */
 
-    @Test
-    public void testThatCheckedValueInSelectedList(){
+    @ValueSource(
+            strings = {
+                    "React", "Angular", "Veu","Public", "Private", "Classified", "General", "Home", "Downloads"
+            }
+    )
+    @ParameterizedTest
+    public void testThatCheckedValueInSelectedResultList(String title){
 
         checkBoxPage
                 .openPage()
                 .expandAllCheckBoxes()
-                .checkAllInFolder("Office");
+                .checkByTitle(title)
+                .verifyThatValueInResultSelected(title);
     }
 
     @MethodSource("testThatIfCheckedFolderThenFilesInAlsoChecked")
@@ -38,7 +40,7 @@ public class CheckBoxesTest extends TestBase {
         checkBoxPage
                 .openPage()
                 .expandAllCheckBoxes()
-                .checkAllInFolder(folderName)
+                .checkByTitle(folderName)
                 .verifyThatElementsCheckedByTitles(folderFiles)
                 .verifyThatValuesInResultSelected(folderFiles);
     }
