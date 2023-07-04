@@ -30,7 +30,7 @@ public class CheckBoxesTest extends TestBase {
                 .verifyThatValueInResultSelected(title);
     }
 
-    @MethodSource("testThatIfCheckedFolderThenFilesInAlsoChecked")
+    @MethodSource("getFolderAndFilesInTestData")
     @ParameterizedTest
     public void testThatIfCheckedFolderThenFilesInAlsoChecked(
             String folderName,
@@ -45,9 +45,27 @@ public class CheckBoxesTest extends TestBase {
                 .verifyThatValuesInResultSelected(folderFiles);
     }
 
+    @MethodSource("getFolderAndFilesInTestData")
+    @ParameterizedTest
+    public void testThatIfCheckedAllFilesThenFolderAlsoChecked(
+            String folderName,
+            List<String> folderFiles
+    ){
+
+        checkBoxPage
+                .openPage()
+                .expandAllCheckBoxes()
+                .verifyThatUncheckedByTitle(folderName)
+                .checkByTitlesInList(folderFiles)
+                .verifyThatElementsCheckedByTitles(folderFiles)
+                .verifyThatCheckedByTitle(folderName)
+                .verifyThatValueInResultSelected(folderName)
+                .verifyThatValuesInResultSelected(folderFiles);
+    }
 
 
-    static Stream<Arguments> testThatIfCheckedFolderThenFilesInAlsoChecked(){
+
+    static Stream<Arguments> getFolderAndFilesInTestData(){
         return Stream.of(
                 Arguments.of(
                         "WorkSpace",

@@ -93,6 +93,11 @@ public class CheckBoxPage{
         return this;
     }
 
+    public CheckBoxPage verifyThatUncheckedByTitle(String title){
+        $(format("#tree-node-%s", title.toLowerCase())).shouldNotBe(Condition.checked);
+        return this;
+    }
+
     public CheckBoxPage verifyThatElementsCheckedByTitles(List<String> titles){
         titles.forEach(s -> {
             verifyThatCheckedByTitle(s);
