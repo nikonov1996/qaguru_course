@@ -24,7 +24,7 @@ public class TextBoxTest {
         Configuration.baseUrl ="https://demoqa.com";
     }
 
-    @Test
+    @Test // TODO переписать на page object
     void testThatTextBoxSubmitSuccess(){
         open("/text-box");
        // $("#app div.main-header").shouldBe(Condition.text("Text Box"));
