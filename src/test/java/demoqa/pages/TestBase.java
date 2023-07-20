@@ -12,6 +12,7 @@ public class TestBase {
     public LoginPage loginPage = new LoginPage();
 
     public CheckBoxPage checkBoxPage = new CheckBoxPage();
+    public TextBoxPage textBoxPage = new TextBoxPage();
 
     @BeforeAll
     static void before(){
