@@ -30,7 +30,7 @@ jobs:
       - uses: Xotabu4/selenoid-github-action@v2
       # запуск тестов
      # - run: gradle compileTestJava
-      - run: gradle clean test --tests TextBoxTest -Dselenide.remote=http://localhost:4444/wd/hub
+      - run: gradle clean test -Dselenide.remote=http://localhost:4444/wd/hub
       # подключение Allure
       # скачиваем историю тестов
       - uses: actions/checkout@v2
