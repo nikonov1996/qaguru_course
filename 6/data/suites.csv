@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Jul 21 11:20:12 GMT 2023","Fri Jul 21 11:20:12 GMT 2023","18","","demoqa.TextBoxTest","","demoqa.TextBoxTest","testDinamicAllureAnnotation","Тест, демонстрирующий работу Allure без аннотаций","Данный тест не содержит шагов, только  Allure описание "
+"passed","Fri Jul 21 11:20:19 GMT 2023","Fri Jul 21 11:20:22 GMT 2023","2889","","threadQA.TextBoxTest","","threadQA.TextBoxTest","testThatTextBoxSubmitSuccess","testThatTextBoxSubmitSuccess()",""
+"passed","Fri Jul 21 11:20:12 GMT 2023","Fri Jul 21 11:20:19 GMT 2023","7140","","demoqa.TextBoxTest","","demoqa.TextBoxTest","testThatTextBoxSubmitSuccess","Заполнение формы /text-box корректными данными",""
