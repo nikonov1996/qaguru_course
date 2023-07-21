@@ -12,7 +12,7 @@ allure {
         version.set("2.19.0")
     }
     adapter { // отвечает за папку build/allure-results
-        aspectjWeaver.set(true)
+        aspectjWeaver.set(true) // обработка для аннотации @Step
         frameworks {
             junit5{
                 adapterVersion.set("2.19.0") // версия интеграции фреймворка и allure
@@ -43,4 +43,5 @@ dependencies {
 
 test {
     useJUnitPlatform{}
+    systemProperties(System.getProperties())
 }
