@@ -11,15 +11,25 @@ jobs:
     # что делать
     steps:
       # выкачиваем репозиторий
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
+
+      - uses: actions/cache@v1
+        with:
+            path: |
+              ~/.m2/repository
+              ~/.gradle/caches
+            key: ${{ runner.os }}-${{ github.workflow }}-${{ hashFiles('**/build.gradle') }}
+            restore-keys: |
+              ${{ runner.os }}-${{ github.workflow }}-
       # используем джаву
-      - uses: actions/setup-java@v3
+      - uses: actions/setup-java@v1
         with:
           distribution: 'zulu'
           java-version: '11'
       # используем selenoid, для ui тестов
       - uses: Xotabu4/selenoid-github-action@v2
       # запуск тестов
+     # - run: gradle compileTestJava
       - run: gradle clean test --tests TextBoxTest -Dselenide.remote=http://localhost:4444/wd/hub
       # подключение Allure
       # скачиваем историю тестов
@@ -34,7 +44,7 @@ jobs:
         if: always()
         with:
           allure_results: build/allure-results
-          allure_report: allure-report
+         # allure_report: allure-report
           allure_history: allure-history
       # публикуем отчет
       - name: Deploy report to Github Pages
