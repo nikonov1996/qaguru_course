@@ -2,7 +2,7 @@ package junit;
 
 import org.junit.jupiter.api.*;
 
-public class FixtureAnnotations {
+public class FixtureAnnotationsTest {
 
     @BeforeEach
     void beforeEach(){
