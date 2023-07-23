@@ -1,0 +1,40 @@
+package practiceWithSelenoid.pages;
+
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import org.junit.jupiter.api.AfterEach;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import practiceWithSelenoid.helpers.AttachHelper;
+import practiceWithSelenoid.pages.TextBoxPage;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.BeforeAll;
+
+public class TestBase {
+
+    public TextBoxPage textBoxPage = new TextBoxPage();
+
+    @BeforeAll
+    static void before(){
+        SelenideLogger.addListener("allure", new AllureSelenide());
+        Configuration.headless = false;
+        Configuration.browserSize = "1920x1080";
+        Configuration.pageLoadStrategy = "eager";
+        Configuration.baseUrl ="https://demoqa.com";
+        Configuration.remote = "http://localhost:4040/wd/hub";
+
+        // Добавление настроек для записи видео в селеноиде (по умолчанию запись видео не идет)
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("enableVNC", true);
+        capabilities.setCapability("enableVideo", true);
+        Configuration.browserCapabilities = capabilities;
+    }
+
+    @AfterEach
+    void addAttachments(){
+        AttachHelper.screenshotAs("actual_screenshot");
+        AttachHelper.pageSource();
+        AttachHelper.browserConsoleLogs();
+        AttachHelper.addVideo();
+    }
+}
