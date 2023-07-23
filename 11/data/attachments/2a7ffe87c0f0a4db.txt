@@ -1,0 +1,40 @@
+[2023-07-23T15:14:32.831Z] [WARNING] https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202307190101/pubads_impl.js?cb=31076290 9:255863 "[GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead."
+[2023-07-23T15:14:32.834Z] [WARNING] https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202307190101/pubads_impl.js?cb=31076290 9:255863 "[GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead."
+[2023-07-23T15:14:32.840Z] [WARNING] https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202307190101/pubads_impl.js?cb=31076290 9:255863 "[GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead."
+[2023-07-23T15:14:33.108Z] [WARNING] https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202307190101/pubads_impl.js?cb=31076290 9:255863 "[GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead."
+[2023-07-23T15:14:33.118Z] [SEVERE] https://cdn-ima.33across.com/ob.js 1:40874 "33Across Lexicon ID Mappings Provider: PID not found"
+[2023-07-23T15:14:33.120Z] [WARNING] https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202307190101/pubads_impl.js?cb=31076290 9:255863 "[GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead."
+[2023-07-23T15:14:33.691Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:14:36.383Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:14:38.961Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:14:40.124Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:14:41.475Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:14:42.422Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:14:43.325Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:14:44.300Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:14:45.184Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:14:46.165Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:14:48.327Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:14:49.450Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:14:50.579Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:14:52.290Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:14:53.296Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:14:54.387Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:14:55.237Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:14:56.716Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:14:58.633Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:15:01.837Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
+[2023-07-23T15:15:02.987Z] [SEVERE] https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=https%3A%2F%2Fthe-internet.herokuapp.com%2Fdrag_and_drop&u=oeu1690125302912r0.12861103455514633&wxhr=true&t=1690125302919&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2023-07-23T15:15:03.007Z] [SEVERE] https://the-internet.herokuapp.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)
+[2023-07-23T15:15:14.421Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-07-23T15:15:14.670Z] [WARNING] security - Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.
+[2023-07-23T15:15:19.403Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-07-23T15:15:24.277Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-07-23T15:15:29.053Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-07-23T15:15:34.025Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-07-23T15:15:38.774Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-07-23T15:15:43.514Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-07-23T15:15:50.286Z] [SEVERE] https://pervcrb.ru/kratkaya-istoricheskaya-spravka/informaciya-o-zarabotnoj-plate/ 279:1734 Uncaught ReferenceError: _objectSpread is not defined
+[2023-07-23T15:15:52.562Z] [SEVERE] https://junit.org/junit5/docs/current/user-guide/images/component-diagram.svg - Failed to load resource: the server responded with a status of 404 ()
+[2023-07-23T15:16:04.835Z] [SEVERE] https://pervcrb.ru/kratkaya-istoricheskaya-spravka/informaciya-o-zarabotnoj-plate/ 279:1734 Uncaught ReferenceError: _objectSpread is not defined
+[2023-07-23T15:16:10.966Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
