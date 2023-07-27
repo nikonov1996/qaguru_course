@@ -1,0 +1,12 @@
+[2023-07-27T16:50:36.526Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-07-27T16:50:36.780Z] [WARNING] security - Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.
+[2023-07-27T16:50:41.443Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-07-27T16:50:46.413Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-07-27T16:50:51.267Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-07-27T16:50:56.143Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-07-27T16:51:01.051Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-07-27T16:51:05.902Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-07-27T16:51:12.952Z] [SEVERE] https://pervcrb.ru/kratkaya-istoricheskaya-spravka/informaciya-o-zarabotnoj-plate/ 279:1734 Uncaught ReferenceError: _objectSpread is not defined
+[2023-07-27T16:51:16.056Z] [SEVERE] https://junit.org/junit5/docs/current/user-guide/images/component-diagram.svg - Failed to load resource: the server responded with a status of 404 ()
+[2023-07-27T16:51:28.603Z] [SEVERE] https://pervcrb.ru/kratkaya-istoricheskaya-spravka/informaciya-o-zarabotnoj-plate/ 279:1734 Uncaught ReferenceError: _objectSpread is not defined
+[2023-07-27T16:51:35.865Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
