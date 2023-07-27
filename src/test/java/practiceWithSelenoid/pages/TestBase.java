@@ -3,6 +3,7 @@ package practiceWithSelenoid.pages;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Tag;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import practiceWithSelenoid.helpers.AttachHelper;
 import practiceWithSelenoid.pages.TextBoxPage;
@@ -10,6 +11,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeAll;
 
+@Tag("selenoid_tests")
 public class TestBase {
 
     public TextBoxPage textBoxPage = new TextBoxPage();
