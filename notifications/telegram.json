@@ -1,9 +1,9 @@
 {
   "base": {
-    "project": "${env.JOB_NAME}",
+    "project": "${JOB_NAME}",
     "environment": "${ENV}",
-    "comment": " ${env.BROWSER} ${env.BROWSER_SIZE}",
-    "reportLink": "${env.BUILD_URL}",
+    "comment": " ${BROWSER} ${BROWSER_SIZE}",
+    "reportLink": "${BUILD_URL}",
     "language": "en",
     "messenger": "telegram",
     "allureFolder": "C:/ProgramData/Jenkins/.jenkins/workspace/Run test DEMOQA/allure-report/",
