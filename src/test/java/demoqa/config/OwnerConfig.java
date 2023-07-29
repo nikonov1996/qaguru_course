@@ -7,4 +7,5 @@ public interface OwnerConfig extends Config {
     String password();
     String baseUrl();
     String textBoxEndpoint();
+    String selenoidHub();
 }
