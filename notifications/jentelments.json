@@ -6,7 +6,7 @@
     "reportLink": "${BUILD_URL}",
     "language": "en",
     "messenger": "telegram",
-    "allureFolder": "/allure-report/",
+    "allureFolder": "C:/ProgramData/Jenkins/.jenkins/workspace/Run test DEMOQA/allure-report/",
     "enableChart": true
   },
   "telegram": {
