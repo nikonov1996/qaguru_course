@@ -23,10 +23,10 @@ public class TestBase {
     static void before(){
         SelenideLogger.addListener("allure", new AllureSelenide());
         WebDriverManager.chromedriver().setup();
-        Configuration.browser = "chrome";
+        Configuration.browser = System.getProperty("browser","chrome");
         Configuration.driverManagerEnabled = true;
-        Configuration.headless = false;
-        Configuration.browserSize = "1920x1080";
+        Configuration.headless = System.getProperty("headless", "false").equals("true");
+        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.pageLoadStrategy = "eager";
         Configuration.baseUrl =useConfig().baseUrl();
     }

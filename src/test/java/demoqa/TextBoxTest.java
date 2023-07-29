@@ -5,6 +5,7 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
 import demoqa.model.RegisterUser;
 import demoqa.pages.TestBase;
+import demoqa.pages.TextBoxPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.BeforeAll;
@@ -53,6 +54,7 @@ public class TextBoxTest extends TestBase {
        добавить общий story или feature для группы тестов.
     */
     void testDinamicAllureAnnotation() {
+        textBoxPage.openPage();
         Allure.getLifecycle().updateTestCase(
                 testResult ->
                         testResult.setName("Тест, демонстрирующий работу Allure без аннотаций"));
