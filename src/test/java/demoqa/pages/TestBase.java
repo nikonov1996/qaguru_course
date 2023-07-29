@@ -10,9 +10,10 @@ import org.junit.jupiter.api.Tag;
 import practiceWithSelenoid.helpers.AttachHelper;
 
 import static com.codeborne.selenide.Selenide.executeJavaScript;
+import static demoqa.config.ConfigFactory.useConfig;
+
 @Tag("demoqa")
 public class TestBase {
-
     public RegistrationPage registrationPage = new RegistrationPage();
     public LoginPage loginPage = new LoginPage();
     public CheckBoxPage checkBoxPage = new CheckBoxPage();
@@ -27,7 +28,7 @@ public class TestBase {
         Configuration.headless = false;
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
-        Configuration.baseUrl ="https://demoqa.com";
+        Configuration.baseUrl =useConfig().baseUrl();
     }
 
     @AfterEach
