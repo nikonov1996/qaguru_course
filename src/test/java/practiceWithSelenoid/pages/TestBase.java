@@ -21,6 +21,7 @@ public class TestBase {
     @BeforeAll
     static void before(){
         SelenideLogger.addListener("allure", new AllureSelenide());
+        Configuration.browser = System.getProperty("browser","chrome");
         Configuration.headless = false;
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
