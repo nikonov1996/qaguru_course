@@ -4,9 +4,10 @@ import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Selenide.*;
+import static demoqa.config.ConfigFactory.useConfig;
 
 public class TextBoxPage {
-    private String PAGE_NAME = "/text-box";
+    private String PAGE_NAME = useConfig().textBoxEndpoint();
 
     @Step("Открыть страницу {this.PAGE_NAME}")
     public TextBoxPage openPage(){

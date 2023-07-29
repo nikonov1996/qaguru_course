@@ -1,0 +1,17 @@
+{
+  "base": {
+    "project": "qanva",
+    "environment": "",
+    "comment": "",
+    "reportLink": "",
+    "language": "ru",
+    "messenger": "telegram",
+    "allureFolder": "build/allure-report/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "6577151298:AAF065kVYBahJ43Ky34fzO5fbLWW5F9I-HA",
+    "chat": "-941667466",
+    "replyTo": ""
+  }
+}
