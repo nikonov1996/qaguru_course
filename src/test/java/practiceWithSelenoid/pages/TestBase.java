@@ -26,7 +26,7 @@ public class TestBase {
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
         Configuration.baseUrl = useConfig().baseUrl();
-        Configuration.remote = useConfig().selenoidHub() + "/wd/hub";
+        Configuration.remote = System.getProperty("selenoidUrl",useConfig().selenoidHub() + "/wd/hub") ;
 
         // Добавление настроек для записи видео в селеноиде (по умолчанию запись видео не идет)
         DesiredCapabilities capabilities = new DesiredCapabilities();
