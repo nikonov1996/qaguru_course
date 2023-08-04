@@ -26,10 +26,6 @@ compileTestJava{
 }
 
 dependencies {
-    implementation(
-            "org.postgresql:postgresql:42.6.0",
-            "org.springframework:spring-jdbc:6.0.9"
-    )
     testImplementation(
             "com.codeborne:selenide:6.12.4",
             "org.junit.jupiter:junit-jupiter:5.9.3",
