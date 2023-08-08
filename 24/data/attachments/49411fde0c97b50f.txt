@@ -1,0 +1,13 @@
+[2023-08-08T12:44:27.475Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-08-08T12:44:27.799Z] [WARNING] security - Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.
+[2023-08-08T12:44:32.609Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-08-08T12:44:37.581Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-08-08T12:44:42.495Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-08-08T12:44:47.452Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-08-08T12:44:52.564Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-08-08T12:44:57.407Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-08-08T12:45:05.231Z] [SEVERE] https://pervcrb.ru/kratkaya-istoricheskaya-spravka/informaciya-o-zarabotnoj-plate/ 279:1734 Uncaught ReferenceError: _objectSpread is not defined
+[2023-08-08T12:45:06.796Z] [SEVERE] https://mc.yandex.com/sync_cookie_image_decide?token=10089.YFjaxxUi2ivXR5Iqz_fnmQEI_9ely7B049ZrL9FDdtX6WTKDFVn1qSTe3HCIU5QzpKujICRp0JZZIr6nYJMhdiDtSq_kWO6yBPjcChOfz2s%2C.N8Wuki2Hjec_b9TfE4bdboRCPDU%2C - Failed to load resource: the server responded with a status of 400 ()
+[2023-08-08T12:45:09.321Z] [SEVERE] https://junit.org/junit5/docs/current/user-guide/images/component-diagram.svg - Failed to load resource: the server responded with a status of 404 ()
+[2023-08-08T12:45:22.944Z] [SEVERE] https://pervcrb.ru/kratkaya-istoricheskaya-spravka/informaciya-o-zarabotnoj-plate/ 279:1734 Uncaught ReferenceError: _objectSpread is not defined
+[2023-08-08T12:45:32.306Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 401:504 Uncaught TypeError: g(...).setup is not a function
