@@ -11,10 +11,9 @@ import reqresin.models.pojoModels.LoginResponseModel;
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.core.Is.is;
-import static reqresin.specifications.loginSpec.LoginSpec.loginRequestSpecification;
 import static reqresin.specifications.loginSpec.LoginSpec.loginResponseSpecification;
 
-public class AuthorizationTest {
+public class AuthorizationTest extends TestBase {
     /**
      * Пример теста без использования моделей для описания тела запроса/ответа,
      * а также без использования спецификаций для избежания дублирования кода
@@ -22,9 +21,7 @@ public class AuthorizationTest {
     @Test
     public void testThatSuccessLogin(){
         String body = "{ \"email\": \"eve.holt@reqres.in\", \"password\": \"cityslicka\" }";
-        given()
-                .log().all().
-                contentType(ContentType.JSON).
+        given().
                 body(body).
         when()
                 .post("https://reqres.in/api/login").
@@ -49,7 +46,7 @@ public class AuthorizationTest {
 
         LoginResponseModel expectedResponseBody = new LoginResponseModel().withToken("QpwL5tke4Pnpja7X4");
 
-        LoginResponseModel actualResponseBody = given(loginRequestSpecification)
+        LoginResponseModel actualResponseBody = given()
                 .body(body).
                 when()
                 .post("/login").
@@ -77,7 +74,7 @@ public class AuthorizationTest {
         LoginResponseLombokModel expectedResponseBody = new LoginResponseLombokModel();
                 expectedResponseBody.setToken("QpwL5tke4Pnpja7X4");
 
-        LoginResponseModel actualResponseBody = given(loginRequestSpecification)
+        LoginResponseModel actualResponseBody = given()
                 .body(body).
                 when()
                 .post("/login").

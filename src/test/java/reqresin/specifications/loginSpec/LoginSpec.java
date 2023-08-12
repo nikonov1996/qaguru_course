@@ -13,15 +13,6 @@ import static reqresin.helpers.CustomAllureListener.withCustomTemplates;
 
 public class LoginSpec {
 
-    public static RequestSpecification loginRequestSpecification = with()
-            .filter(new AllureRestAssured())
-            .log().uri()
-            .log().headers()
-            .log().body()
-            .contentType(ContentType.JSON)
-            .baseUri("https://reqres.in")
-            .basePath("/api");
-
     public static ResponseSpecification loginResponseSpecification = new ResponseSpecBuilder()
             .log(LogDetail.STATUS)
             .log(LogDetail.BODY)
