@@ -1,0 +1,2 @@
+[2023-08-12T17:43:48.781Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 412:423 Uncaught TypeError: c(...).setup is not a function
+[2023-08-12T17:43:49.340Z] [SEVERE] https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202308080102/pubads_impl.js?cb=31076943 9:34662 Uncaught TypeError: Failed to execute 'observe' on 'IntersectionObserver': parameter 1 is not of type 'Element'.

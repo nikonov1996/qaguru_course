@@ -1,0 +1,13 @@
+[2023-08-12T17:44:43.001Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-08-12T17:44:43.336Z] [WARNING] security - Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.
+[2023-08-12T17:44:48.056Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-08-12T17:44:53.018Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-08-12T17:44:57.887Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-08-12T17:45:02.861Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-08-12T17:45:07.632Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-08-12T17:45:12.459Z] [WARNING] security - Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'unload'.
+[2023-08-12T17:45:20.016Z] [SEVERE] https://pervcrb.ru/kratkaya-istoricheskaya-spravka/informaciya-o-zarabotnoj-plate/ 279:1734 Uncaught ReferenceError: _objectSpread is not defined
+[2023-08-12T17:45:23.708Z] [SEVERE] https://junit.org/junit5/docs/current/user-guide/images/component-diagram.svg - Failed to load resource: the server responded with a status of 404 ()
+[2023-08-12T17:45:37.082Z] [SEVERE] https://pervcrb.ru/kratkaya-istoricheskaya-spravka/informaciya-o-zarabotnoj-plate/ 279:1734 Uncaught ReferenceError: _objectSpread is not defined
+[2023-08-12T17:45:44.860Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 412:423 Uncaught TypeError: c(...).setup is not a function
+[2023-08-12T17:45:45.241Z] [SEVERE] https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202308080102/pubads_impl.js?cb=31076943 9:34662 Uncaught TypeError: Failed to execute 'observe' on 'IntersectionObserver': parameter 1 is not of type 'Element'.

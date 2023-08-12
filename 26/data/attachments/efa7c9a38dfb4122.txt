@@ -1,0 +1,2 @@
+[2023-08-12T17:44:28.482Z] [SEVERE] https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=https%3A%2F%2Fthe-internet.herokuapp.com%2Fdrag_and_drop&u=oeu1691862268423r0.34630077102938106&wxhr=true&t=1691862268429&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2023-08-12T17:44:28.676Z] [SEVERE] https://the-internet.herokuapp.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)
