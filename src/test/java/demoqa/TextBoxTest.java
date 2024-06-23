@@ -1,20 +1,11 @@
 package demoqa;
 
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.SelenideElement;
 import demoqa.model.RegisterUser;
 import demoqa.pages.TestBase;
-import demoqa.pages.TextBoxPage;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.*;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeOptions;
 
-import static com.codeborne.selenide.Selenide.*;
 import static demoqa.service.RegisterUserGenerator.generateRegisterUser;
 import static java.lang.String.format;
 

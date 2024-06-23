@@ -40,7 +40,7 @@ public class CheckBoxPage{
                 .parent().parent().parent()
                 .shouldHave(Condition.cssClass("rct-node-parent"))
                 .$("ol")
-                .$$(".rct-title");
+                .$$(".rct-title").stream().collect(Collectors.toList());
         elementList.forEach(selenideElement -> {
             selenideElement.hover().click();
         });
@@ -65,7 +65,7 @@ public class CheckBoxPage{
                 .parent().parent().parent()
                 .shouldHave(Condition.cssClass("rct-node-parent"))
                 .$("ol")
-                .$$(".rct-title"); // toDO Нужно заменить три parent на чтото более локаничное, может xpath
+                .$$(".rct-title").stream().collect(Collectors.toList()); // toDO Нужно заменить три parent на чтото более локаничное, может xpath
         List<String> titles = new ArrayList<>();
         for (int i = 0; i < elementList.size(); i++) {
             titles.add( elementList.get(i).getText());
@@ -108,7 +108,7 @@ public class CheckBoxPage{
     }
 
     public List<String> getResultSelectedValues(){
-        List<SelenideElement> elementList = $$("#result .text-success");
+        List<SelenideElement> elementList = $$("#result .text-success").stream().collect(Collectors.toList());
         List<String> resultSelectedValues = new ArrayList<>();
         for (int i = 0; i < elementList.size(); i++) {
             resultSelectedValues.add(elementList.get(i).getText());

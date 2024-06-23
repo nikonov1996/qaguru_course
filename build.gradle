@@ -28,9 +28,10 @@ compileTestJava{
 
 dependencies {
     testImplementation(
-            "com.codeborne:selenide:6.12.4",
+            "com.codeborne:selenide-proxy:7.3.3",
+            "org.seleniumhq.selenium:selenium-devtools-v125:4.22.0",
             "org.junit.jupiter:junit-jupiter:5.9.3",
-            "io.github.bonigarcia:webdrivermanager:5.3.2",
+            "io.github.bonigarcia:webdrivermanager:5.8.0",
             "com.github.javafaker:javafaker:1.0.2",
             "io.qameta.allure:allure-selenide:2.20.1",
             "org.assertj:assertj-core:3.23.1",

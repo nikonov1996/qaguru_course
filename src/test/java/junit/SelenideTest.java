@@ -28,7 +28,7 @@ public class SelenideTest extends TestBase {
     static void before(){
         WebDriverManager.chromedriver().setup();
         Configuration.browser = "chrome";
-        Configuration.driverManagerEnabled = true;
+//        Configuration.driverManagerEnabled = true;
         Configuration.headless = false;
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";

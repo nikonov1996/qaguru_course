@@ -17,7 +17,7 @@ public class TextBoxTest {
     static void before(){
         WebDriverManager.chromedriver().setup();
         Configuration.browser = "chrome";
-        Configuration.driverManagerEnabled = true;
+//        Configuration.driverManagerEnabled = true;
         Configuration.browserSize = "1920x1080";
         Configuration.headless = false;
         Configuration.baseUrl ="http://85.192.34.140:8081";
