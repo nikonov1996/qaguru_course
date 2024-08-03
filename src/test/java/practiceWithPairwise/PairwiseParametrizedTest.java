@@ -51,8 +51,6 @@ public class PairwiseParametrizedTest {
     @ParameterizedTest
     @MethodSource("getTexBoxFieldsPairwiserParams")
     void fillTexBoxFieldsByPairwiser(TextBoxFormModel textBoxFieldModel) {
-        System.out.println(textBoxFieldModel);
-        System.out.println("\n\n********************");
         open("/");
         $(byTagAndText("h5", "Elements")).click();
         $("#item-0").click();
