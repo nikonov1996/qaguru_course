@@ -9,7 +9,7 @@ import java.util.HashMap;
 public class RandomTestData {
 
     private static Faker instance;
-    private static Faker getFackerInctance(){
+    public static Faker getFackerInctance(){
         if (instance == null){
             instance = new Faker();
         }

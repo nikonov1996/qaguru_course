@@ -44,8 +44,11 @@ dependencies {
             "io.rest-assured:rest-assured:5.3.0",
             "io.qameta.allure:allure-rest-assured:2.19.0",
             "com.fasterxml.jackson.core:jackson-databind:2.15.2",
-            "org.assertj:assertj-core:3.24.2"
+            "org.assertj:assertj-core:3.24.2",
+            "io.github.pavelicii:allpairs4j:1.0.1",
+            'com.anyqn.lib:pairwiser:0.1.21'
     )
+
 }
 
 

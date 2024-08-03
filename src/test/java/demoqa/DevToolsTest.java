@@ -4,7 +4,6 @@ import com.browserup.bup.BrowserUpProxy;
 import com.browserup.bup.proxy.CaptureType;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
-import demoqa.pages.TestBase;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;

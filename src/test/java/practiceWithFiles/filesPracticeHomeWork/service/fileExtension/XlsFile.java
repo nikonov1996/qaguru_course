@@ -14,6 +14,7 @@ public class XlsFile {
 
     public static XLS getXlsFileContent(ClassLoader classLoader, String filename) throws IOException {
         try (InputStream resourceStream = classLoader.getResourceAsStream(filename)) {
+            assert resourceStream != null;
             return new XLS(resourceStream);
         }
     }

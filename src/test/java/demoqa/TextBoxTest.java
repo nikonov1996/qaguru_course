@@ -1,7 +1,6 @@
 package demoqa;
 
 import demoqa.model.RegisterUser;
-import demoqa.pages.TestBase;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
